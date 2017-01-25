@@ -14,7 +14,7 @@
 // @include     http://*konachan.net/post/show/*
 // @include     https://*konachan.com/post/show/*
 // @include     https://*konachan.net/post/show/*
-// @version     1.0.4
+// @version     1.0.5
 // @require     http://code.jquery.com/jquery-2.2.1.min.js
 // @grant       GM_addStyle
 // ==/UserScript==
@@ -68,7 +68,7 @@ if(window.location.pathname == "/post") {
     $($("#tag-sidebar").parent()).hide();
     $("#blacklisted-sidebar").hide();
 } else {
-    GM_addStyle("#image { width: calc(100vw - 30%)}");
+    GM_addStyle("#image { width: calc(100vw - 30%); margin-right: 0 !important; padding-right: 2rem; box-sizing: border-box;}");
     var imi = document.getElementById("image");
     imi.removeAttribute("width");
     imi.removeAttribute("height");
