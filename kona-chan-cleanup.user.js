@@ -23,7 +23,7 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 if(window.location.pathname == "/post") {
     var pageNum = 1;
     var list = $('#post-list-posts');
-    GM_addStyle("img {min-height: 100px;} #post-list .content {  } #post-list-posts li { width: auto; height: 100%;padding-right: 5px; } #post-list-posts li img { display: block; } #post-list-posts li a {width: 100%; display: inline-block; text-align: center; background: #2A1E1E; } #post-list-posts li a:hover {background: #514747;}");
+    GM_addStyle("#post-list-posts img {min-height: 100px;} #post-list .content {  } #post-list-posts li { width: auto; height: 100%;padding-right: 5px; } #post-list-posts li img { display: block; } #post-list-posts li a {width: 100%; display: inline-block; text-align: center; background: #2A1E1E; } #post-list-posts li a:hover {background: #514747;}");
     GM_addStyle(".sidebar > div:first-child { position: fixed;    top: 150px;    left: 40px;    background: rgb(34, 34, 34); margin: 0; } .sidebar > div { margin-top:30px; } .sidebar { width: auto !important; margin-top: 40px;} .internalContent {display: block; margin-left: 210px} iframe {display: block;}");
     list.html("");
     list.css('display', 'inline-block');
