@@ -1,6 +1,8 @@
 # Kona-chan Cleanup
 A small userscript to ease to browsing of konachan.net and konachan.com
 
+![screenshot](https://raw.githubusercontent.com/Max9403/Kona-chan-Cleanup/master/screenshot.png)
+
 ## Install
 ### Firefox
 Install [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/), then **[click here to install Kona-chan cleanup](https://github.com/Max9403/Kona-chan-Cleanup/raw/master/kona-chan-cleanup.user.js)**.
