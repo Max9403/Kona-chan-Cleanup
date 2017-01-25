@@ -1,7 +1,7 @@
 # Kona-chan Cleanup
 A small userscript to ease to browsing of konachan.net and konachan.com
 
-![screenshot](https://raw.githubusercontent.com/Max9403/Kona-chan-Cleanup/master/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/Max9403/Kona-chan-Cleanup/master/screenshot.jpg)
 
 ## Install
 ### Firefox
