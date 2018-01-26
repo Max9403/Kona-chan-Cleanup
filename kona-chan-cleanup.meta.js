@@ -14,7 +14,7 @@
 // @include     http://*konachan.net/post/show/*
 // @include     https://*konachan.com/post/show/*
 // @include     https://*konachan.net/post/show/*
-// @version     1.0.5
+// @version     1.0.6
 // @require     http://code.jquery.com/jquery-2.2.1.min.js
 // @grant       GM_addStyle
 // ==/UserScript==
