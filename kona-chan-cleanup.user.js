@@ -20,6 +20,20 @@
 // ==/UserScript==
 this.$ = this.jQuery = jQuery.noConflict(true);
 
+if (!GM_addStyle) {
+  function GM_addStyle(aCss) {
+    var head = document.getElementsByTagName('head')[0];
+    if (head) {
+      var style = document.createElement('style');
+      style.setAttribute('type', 'text/css');
+      style.textContent = aCss;
+      head.appendChild(style);
+      return style;
+    }
+    return null;
+  }
+}
+
 if(window.location.pathname == "/post") {
     var pageNum = 1;
     var list = $('#post-list-posts');
