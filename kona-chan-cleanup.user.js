@@ -15,7 +15,7 @@
 // @include     https://*konachan.com/post/show/*
 // @include     https://*konachan.net/post/show/*
 // @version     1.0.6
-// @require     http://code.jquery.com/jquery-2.2.1.min.js
+// @require     https://code.jquery.com/jquery-2.2.1.min.js
 // @grant       GM_addStyle
 // ==/UserScript==
 this.$ = this.jQuery = jQuery.noConflict(true);
@@ -62,7 +62,7 @@ if(window.location.pathname == "/post") {
     function nextPage () {
         if(!nexting) {
             nexting = true;
-            $.get((/.*\.net.*/i.test(window.location.host) ? "http://konachan.net/post.json?limit=24&page=" : "http://konachan.com/post.json?limit=24&page=") + (pageNum++) + "&tags=" + (/.*\.net.*/i.test(window.location.host) ? "rating:safe%20" : "") + tags, {data: 'here'}, function(data) {
+            $.get((/.*\.net.*/i.test(window.location.host) ? "https://konachan.net/post.json?limit=24&page=" : "https://konachan.com/post.json?limit=24&page=") + (pageNum++) + "&tags=" + (/.*\.net.*/i.test(window.location.host) ? "rating:safe%20" : "") + tags, {data: 'here'}, function(data) {
                 data.forEach(function(image) {
                     list.append("<li><a href=\"/post/show/" + image.id + "\" target=\"_blank\"><img src=\""+ image.preview_url + "\" title=\"" + image.tags + "\" alt=\"" + image.tags + "\" />" + image.width + "x" + image.height + "</a></li>");
                 });
