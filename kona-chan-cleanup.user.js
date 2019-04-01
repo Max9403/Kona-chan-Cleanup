@@ -14,7 +14,7 @@
 // @include     http://*konachan.net/post/show/*
 // @include     https://*konachan.com/post/show/*
 // @include     https://*konachan.net/post/show/*
-// @version     1.0.6
+// @version     1.0.7
 // @updateURL   https://raw.githubusercontent.com/Max9403/Kona-chan-Cleanup/master/kona-chan-cleanup.meta.js
 // @downloadURL https://raw.githubusercontent.com/Max9403/Kona-chan-Cleanup/master/kona-chan-cleanup.user.js
 // @require     https://code.jquery.com/jquery-2.2.1.min.js
